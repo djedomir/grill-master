@@ -1,0 +1,17 @@
+<div class="grill-master">
+    <div class="grill-master__left-menu">
+            <select [(ngModel)]="selectedMenu" name="menu" (change)="onSelectedMenuChanged()">
+                <option value="null" disabled="true" [selected]="true">Select menu</option>
+                <option *ngFor="let item of menus" [ngValue]="item">{{item.menu}}</option>
+            </select>
+    </div>
+
+    <div *ngIf="selectedMenu">
+        <grill-header [grillRounds]="packedGrillMenu?.grillRounds" (onCurrentRoundChanged)="updateCurrentGrillRound($event)"></grill-header>
+        <grill-round [grillRound]="currentGrillRound"></grill-round>
+    </div>
+
+    <div *ngIf="!selectedMenu" class="grill_master__no-selected-menu">
+        No selected menu. Please choose one.
+    </div>
+</div>

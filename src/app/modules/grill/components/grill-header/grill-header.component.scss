@@ -1,0 +1,18 @@
+@import '../../../../../assets/styles/_variables';
+.grill-header {
+    display: flex;
+    flex-basis: 30cm;
+    border-bottom: 1px solid $BORDER_COLOR;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    .grill-header__round {
+        padding: 0px 20px;
+        font-size: 18px;
+    }
+
+    img {
+       cursor: pointer; 
+    }
+}
