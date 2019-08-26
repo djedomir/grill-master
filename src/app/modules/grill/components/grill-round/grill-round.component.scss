@@ -1,0 +1,11 @@
+@import './../../../../../assets/styles/_variables.scss';
+.grill-round {
+    padding: 10px;
+
+    .grill-round__grid {
+        width: 30cm;
+        height: 20cm;
+        position: relative;
+        border: 3px solid $GRILL_BORDER_COLOR;
+    }
+}

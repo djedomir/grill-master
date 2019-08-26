@@ -1,0 +1,30 @@
+@import './../../../../../assets/styles/_variables.scss';
+.grill-master {
+    display: flex;
+
+    .grill-master__left-menu {
+        height: 100vh;
+        width: 3cm;
+        border-right: 1px solid $BORDER_COLOR;
+        padding: 10px;
+    }
+
+    .grill-master__left-menu {
+        select {
+            font-size: 14px;
+        }
+    }
+
+    .grill_master__no-selected-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #B1B1B1;
+        font-style: italic;
+        font-size: 18px;
+        width: 30cm;
+        height: 20cm;
+        border: 3px solid $GRILL_BORDER_COLOR;
+        margin-left: 10px;
+    }
+}

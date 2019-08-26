@@ -1,0 +1,16 @@
+<div *ngIf="grillRounds" class="grill-header">
+    <img *ngIf="currentRoundIndex > 0" 
+        src="../../../../../assets/images/prev.png" 
+        alt="prev" title="Previous Round" 
+        (click)="showPreviousRound()">
+
+    <div class="grill-header-round">
+        Round {{currentRoundIndex + 1}} of {{grillRounds.length}}
+    </div>
+
+    <img *ngIf="currentRoundIndex < grillRounds.length - 1" 
+        src="../../../../../assets/images/next.png"
+        alt="next"
+        title="Next Round"
+        (click)="showNextRound()">
+</div>

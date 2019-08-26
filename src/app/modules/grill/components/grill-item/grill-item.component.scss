@@ -1,0 +1,17 @@
+.grill-item {
+    display: flex;
+    background-color: red;
+    border: 1px solid yellow;
+    position: absolute;
+    color: yellow;
+    justify-content: center;
+    align-items: center; 
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    transition: background-color 0.3ms;
+
+    &:hover {
+        background-color: rgb(255, 123, 0);
+    }
+}

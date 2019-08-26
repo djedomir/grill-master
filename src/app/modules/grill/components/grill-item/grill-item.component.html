@@ -1,0 +1,5 @@
+<div *ngIf="grillItem" 
+    [ngStyle]="{'width.cm' : grillItem.w, 'height.cm' : grillItem.h, 'top.cm' : grillItem.fit.y, 'left.cm' : grillItem.fit.x }"
+    class="grill-item">
+    {{grillItem.name}}
+</div>
